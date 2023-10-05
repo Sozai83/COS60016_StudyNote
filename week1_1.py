@@ -124,3 +124,19 @@ print(isinstance(Z, int))
 print(isinstance(Z, float))
 print(isinstance(Z, bool))
 print(isinstance(Z, str))
+
+# Logic operators
+a = True
+b = False
+print( a and b )
+print (a or b )
+
+# Change the print statement.
+print(True and True)
+print(True or True)
+print(False and False)
+print(False or False)
+print(True or False)
+print(False or True)
+print(not True)
+print(not False)
