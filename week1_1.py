@@ -62,3 +62,23 @@ if_ = True
 print(import_)
 print(except_)
 print(if_)
+
+# Text and numeric data types
+
+# String
+sentence1 = "This is a string in double quotes."
+print(sentence1)
+
+# Print multiple strings
+sentence2 = """This is a multline string.
+    Line 1 added
+    Line 2 added
+    Line 3 added
+"""
+
+print(sentence2)
+
+# Specify characters of a string
+sentence3 =  "This is a longer string."
+print(sentence3)
+print(sentence3[1], sentence3[2],sentence3[10])
