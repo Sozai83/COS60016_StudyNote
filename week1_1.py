@@ -82,3 +82,11 @@ print(sentence2)
 sentence3 =  "This is a longer string."
 print(sentence3)
 print(sentence3[1], sentence3[2],sentence3[10])
+
+# Concatination of strings
+
+first_name = 'Jane'
+last_name ='Doe'
+
+print(first_name + last_name)
+print(first_name + ' ' + last_name)
