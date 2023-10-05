@@ -140,3 +140,12 @@ print(True or False)
 print(False or True)
 print(not True)
 print(not False)
+
+# Comparison operators
+# Create variables.
+age_1 = 30
+age_2 = 55
+
+# View the output.
+print(age_1 > age_2)    
+print(age_1 < age_2)
