@@ -111,3 +111,16 @@ print(type(fval2))
 # Dividing integers
 print(4/3)
 print(type(4/3))
+
+## Boolian
+
+print( 5 > 9)
+print(5 == 9)
+print(5 < 9)
+
+Z = 200
+
+print(isinstance(Z, int))
+print(isinstance(Z, float))
+print(isinstance(Z, bool))
+print(isinstance(Z, str))
