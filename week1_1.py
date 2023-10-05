@@ -35,3 +35,30 @@ print(surname)
 
 # print both outputs
 print(f'Hi {name} {surname}, Nice to meet you.')
+
+## View the list of keywords
+import keyword
+print(keyword.kwlist)
+
+# ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+
+# Following returns error because those are reserved words (keywords)
+# ## Create Variables
+# import = 15
+# except = 'test'
+# if = True
+# #view output
+# print(import)
+# print(except)
+# print(if)
+
+# Create variables
+import_ = 15
+except_ = 'test'
+if_ = True
+
+#View the output
+print(import_)
+print(except_)
+print(if_)
