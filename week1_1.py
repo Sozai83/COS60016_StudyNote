@@ -90,3 +90,24 @@ last_name ='Doe'
 
 print(first_name + last_name)
 print(first_name + ' ' + last_name)
+
+#Numeric types
+
+#Integers
+ival = 987654
+
+print(ival)
+print(type(ival))
+
+#Float
+fval1 = 10.54
+fval2 = 5.64e-5
+
+print(fval1)
+print(type(fval1))
+print(fval2)
+print(type(fval2))
+
+# Dividing integers
+print(4/3)
+print(type(4/3))
