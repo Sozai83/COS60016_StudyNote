@@ -1,3 +1,5 @@
+##LISTS##
+
 # Create a variable to store the list.
 # Specify a list with [].
 myList = ['apple', 'banana', 'pear', 'apple']
@@ -12,7 +14,7 @@ print(myList[-2])
 
 # View specific characters/indices.
 print(myList[0:2])
-
+# Check length of list
 print(len(myList))
 
 # Edit a list
@@ -37,3 +39,20 @@ myList3 = myList1 + myList2
 
 # View the output.
 print(myList3)
+
+
+##TUPLES##
+myTuple = ('apple', 'banana', 'pear')
+
+print(myTuple)
+print(myTuple[0])
+print(myTuple[1])
+print(myTuple[2])
+print(myTuple[0:2])
+# Check length of tuple
+print(len(myTuple))
+
+# myTuple[0] = 'watermelon'
+# The above returns the error
+print(myTuple)
+
