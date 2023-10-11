@@ -87,3 +87,16 @@ student_info2 = {'name': 'John',
 print(student_info2)
 # {'name': 'Mark', 'last name': 'Doe', 'birthday': '1997', 'major': 'Computer Science'}
 # Importantly, you cannot have duplicate keys in a dictionary. The second instance of a key will simply replace the first and overwrite the original value with the new value, as in the previous example.
+
+
+##SETS##
+#A set is an unordered and unindexed collection of items. You would use sets when you are working with unordered sets of unique, immutable values. Sets are written using curly brackets ({}).
+# Create a set with {}.
+mySet = {'apple', 'pear', 'watermelon'}
+
+# View the output.
+print(mySet)
+# print(mySet[0])
+# Errors - TypeError: 'set' object is not subscriptable
+
+print(len(mySet))
