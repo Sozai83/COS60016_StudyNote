@@ -56,3 +56,34 @@ print(len(myTuple))
 # The above returns the error
 print(myTuple)
 
+
+##DICTIONARIES##
+# Specify a dictionary as key:value with {}.
+student_info = {'name': 'John',
+                'last name': 'Doe',
+                'birthday': '1997',
+                'major': 'Computer Science'}
+
+# View the output.
+print(student_info)
+
+print(student_info['name'])
+print(student_info['birthday'])
+print(student_info['major'])
+
+# Determine length of a dictionary
+print(len(student_info))
+
+student_info['name'] = 'Mark'
+print(student_info)
+#{'name': 'Mark', 'last name': 'Doe', 'birthday': '1997', 'major': 'Computer Science'}
+
+student_info2 = {'name': 'John',
+                'name': 'Mark',
+                'last name': 'Doe',
+                'birthday': '1997',
+                'major': 'Computer Science'}
+
+print(student_info2)
+# {'name': 'Mark', 'last name': 'Doe', 'birthday': '1997', 'major': 'Computer Science'}
+# Importantly, you cannot have duplicate keys in a dictionary. The second instance of a key will simply replace the first and overwrite the original value with the new value, as in the previous example.
