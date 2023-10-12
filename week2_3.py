@@ -47,3 +47,29 @@ while i < len(a):
         
     print(a[i])
     i += 1
+
+
+## Nested Loops
+
+adj = ['red', 'big', 'tasty', 'sweet', 'juicy', 'sour']
+fruits = ['apple', 'banana', 'cherry', 'pineapple', 'gherkin']
+
+# for x in adj:
+#     for y in fruits:
+#         print(x,y)
+
+i = 0
+for x in adj:
+    i = 0
+    while i < 3:
+        print(x, fruits[i])
+        i += 1
+i=0
+
+while i < 3:
+    i2 = 0
+    i += 1
+    print(f'Count Outer: {i}')
+    while i2 < 3:
+        i2 += 1
+        print(f'Count inside: {i2}')
