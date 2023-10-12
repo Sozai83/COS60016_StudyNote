@@ -21,3 +21,29 @@ for d in a_dict:
     print(d)
     # city, age, population
 
+## WHILE loop
+i = 1
+
+while i < 20:
+    i += 1
+    print(i)
+
+count = 1
+
+while count < 5:
+    count+= 1
+    print((f"Count : {count}"))
+    print('Python is fun')
+
+
+i = 0
+a = 'dragonballz'
+
+while i < len(a):
+    char = a[i]
+    if char == 'a' or char == 'z':
+        i += 1
+        continue
+        
+    print(a[i])
+    i += 1
