@@ -61,3 +61,21 @@ print(x) #False
 setattr(person_object2, 'self.age', 100)
 x = getattr(person_object2, 'self.age')
 print(x) #100
+
+
+## Inheritance
+class Student(Person):
+    def __init__(self, name, age, language, country):
+        self.country = country
+        super().__init__(name, age, language)
+        
+    
+    def introduce2(self):
+        print(f'''
+              Hi, my name is {self.name} and {self.age} years old. \n
+              I speak {self.language} and I am from {self.country}
+              ''')
+
+person_object3 = Student('James','45','English','Australia')
+person_object3.introduce2()
+
