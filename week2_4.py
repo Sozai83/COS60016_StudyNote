@@ -79,3 +79,17 @@ class Student(Person):
 person_object3 = Student('James','45','English','Australia')
 person_object3.introduce2()
 
+
+## Weather
+
+# Your info might be different.
+class Weather:
+    def __init__(self, temperature, wind_speed, wind_direction):
+        self.temp = temperature
+        self.wspeed = wind_speed
+        self.wdirec = wind_direction
+    def introduce(self):
+        print(f"Hello! The weather today is {self.temp}, {self.wspeed} and {self.wdirec}.")
+
+person_object = Weather('30 degrees Celsius', '30 km/h', 'SSE')
+person_object.introduce()
