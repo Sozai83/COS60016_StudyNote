@@ -1,27 +1,27 @@
 import requests
 from pprint import pprint
 
-# response = requests.get('https://api.coingecko.com/api/v3/exchange_rates')
-# pprint("Coingecko API headers:")
-# print(response.headers)
-# print("Date: ",response.headers.get('Date'))
-# print("Content-Type: ",response.headers.get('Content-Type'))
-# print("Content-Type: ",response.headers.get('content-type'))
-# print("Access-Control-Allow-Methods: ",response.headers['Access-Control-Allow-Methods'])
-# print("Access-Control-Allow-Methods: ",response.headers.get('Access-Control-Allow-Methods'))
-# print("Access-Control-Request-Method: ",response.headers['Access-Control-Request-Method'])
-# print("Content-Encoding: ",response.headers['Content-Encoding'])
+response = requests.get('https://api.coingecko.com/api/v3/exchange_rates')
+pprint("Coingecko API headers:")
+print(response.headers)
+print("Date: ",response.headers.get('Date'))
+print("Content-Type: ",response.headers.get('Content-Type'))
+print("Content-Type: ",response.headers.get('content-type'))
+print("Access-Control-Allow-Methods: ",response.headers['Access-Control-Allow-Methods'])
+print("Access-Control-Allow-Methods: ",response.headers.get('Access-Control-Allow-Methods'))
+print("Access-Control-Request-Method: ",response.headers['Access-Control-Request-Method'])
+print("Content-Encoding: ",response.headers['Content-Encoding'])
 
 
-# params = {'q':'stream', 'order':'length', 'min_width':'5000', 'min_height':'300'}
-# url = 'https://catfact.ninja/fact'
-# response = requests.get(url, json=params)
+params = {'q':'stream', 'order':'length', 'min_width':'5000', 'min_height':'300'}
+url = 'https://catfact.ninja/fact'
+response = requests.get(url, json=params)
 
-# print(response.status_code)
-# # 200
+print(response.status_code)
+# 200
 
-# print(response.json())
-# # {'fact': 'A cats field of vision is about 185 degrees.', 'length': 44}
+print(response.json())
+# {'fact': 'A cats field of vision is about 185 degrees.', 'length': 44}
 
 query = [('q','Melbourne AU')]
 
