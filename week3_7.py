@@ -11,7 +11,7 @@ if status == 200:
     print("Date: ", response.headers.get('Date'))
     print("Content type: ", response.headers.get('Content-Type'))
     print("access-control-allow-origin: ", response.headers.get('access-control-allow-origin'))
-    print("Content-Encoding: ", response.headers.get('Content-Encoding'))
+
     print('Response:')
 
     print(response.json())
@@ -27,3 +27,5 @@ if status == 200:
 
 else:
     print(status)
+    print("Content-Encoding: ", response.headers.get('Content-Encoding'))
+
