@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    {% extends "base.html" %}
+    {% block title %}Home Page{% endblock %}
+    {% block content %}
+       <h1>This is the main page contains important information.</h1>
+       <h2>This should be only visble after the user is logged in</h2>
+
+       {% if content == 'True': %}
+        <h2>True</h2>
+        {% else %}
+        <h2>Not True</h2>
+        {% endif %}
+
+        {% for i in range(10): %}
+        <p>{{i}}</p>
+        {% endfor %}
+    {% endblock %}
+   </body>
+</html>

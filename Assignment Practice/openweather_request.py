@@ -1,9 +1,9 @@
 import requests
 import os
+from pprint import pprint
 
 url = 'https://openweathermap.org/'
 API_key = os.environ.get('OpenWeather_API_key')
-print(API_key)
 
 resp = requests.get(url)
 print(resp.status_code)
@@ -28,6 +28,7 @@ my_get = GetRequests(urls['openweather'])
 
 my_get.make_get_requests()
 
-weather_url = "https://api.openweathermap.org/data/2.5/weather?lat=51.509865&lon=-0.118092" "&appid=" + API_key
+weather_url = "https://api.openweathermap.org/data/2.5/weather?lat=51.5009088&lon=-0.176087569708498" "&appid=" + API_key
 resp1 = requests.get(weather_url)
-print("Today's weather in London:", resp1.json())
+print("Today's weather in London:")
+pprint(resp1.json())

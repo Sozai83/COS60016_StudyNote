@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    {% extends "base.html" %}
+    {% block title %}Home Page{% endblock %}
+    {% block content %}
+    <form action="" method="post">
+        <input type="text" name="location" value="" placeholder="Type location"/>
+        <input type="submit" value="Submit"/>
+    </form>
+    {% if error is defined and error %}
+    <br><br><span class="alert alert-info">Please enter a valid city name.</span></br>
+    {% endif %}
+    {% endblock %}
+   </body>
+</html>
