@@ -4,8 +4,8 @@
     {% block title %}Home Page{% endblock %}
     {% block content %}
     <form action="" method="post">
-        <input type="text" name="location" value="" placeholder="Type location"/>
-        <input type="submit" value="Submit"/>
+        <input type="text" name="location" value="" placeholder="Type location" aria-label="location"/>
+        <input type="submit" value="Submit"  aria-label="submit"/>
     </form>
     {% if error is defined and error %}
     <br><br><span class="alert alert-info">Please enter a valid city name.</span></br>
