@@ -2,7 +2,7 @@ import requests
 import os
 from pprint import pprint
 
-url = 'https://openweathermap.org/'
+url = 'https://api.openweathermap.org/data/2.5/weather'
 API_key = os.environ.get('OpenWeather_API_key')
 
 resp = requests.get(url)
