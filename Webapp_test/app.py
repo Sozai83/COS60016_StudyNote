@@ -22,7 +22,10 @@ def login():
 
 @app.route("/user/<string:usr>")
 def user(usr:str):
-    return f"<h1>{usr}</h1>"
+    if len(usr) > 0:
+        return render_template("user.html", usr=usr)
+    else:
+        redirect(url_for("login"))
 
 
 if __name__ == '__main__':
